@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sooraj MD – Automotive Audio DSP Software Engineer specializing in real-time C++ audio pipeline development for automotive infotainment systems." />
+  <meta name="keywords" content="Sooraj MD, DSP Engineer, Embedded C++, Automotive Software, Audio Pipeline, Harman, C++ Engineer Portfolio" />
+  <meta property="og:title" content="Sooraj MD | Automotive DSP & Embedded C++ Engineer" />
+  <meta property="og:description" content="Portfolio of Sooraj MD – Audio DSP Software Engineer at Harman International" />
+  <title>Sooraj MD | Automotive DSP & Embedded C++ Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─── CUSTOM CURSOR ─────────────────────────────── -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-outline"></div>
+
+  <!-- ─── NAV ──────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">SM<span class="accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about"     class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills"    class="nav-link">Skills</a></li>
+        <li><a href="#projects"  class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact"   class="nav-link">Contact</a></li>
+      </ul>
+      <a href="mailto:soorajmd2544@gmail.com" class="nav-cta" id="nav-hire">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#about"      class="mob-link">About</a></li>
+      <li><a href="#experience" class="mob-link">Experience</a></li>
+      <li><a href="#skills"     class="mob-link">Skills</a></li>
+      <li><a href="#projects"   class="mob-link">Projects</a></li>
+      <li><a href="#education"  class="mob-link">Education</a></li>
+      <li><a href="#contact"    class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ─── HERO ─────────────────────────────────────── -->
+  <section id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">Available for Opportunities</div>
+      <h1 class="hero-name reveal-up">
+        <span class="name-first">Sooraj</span>
+        <span class="name-last">MD</span>
+      </h1>
+      <div class="hero-role reveal-up">
+        <span class="role-prefix">I build&nbsp;</span>
+        <span class="typed-wrapper">
+          <span id="typed-text"></span><span class="typed-cursor">|</span>
+        </span>
+      </div>
+      <p class="hero-sub reveal-up">
+        Automotive Audio DSP Software Engineer · Harman International (Samsung)<br/>
+        Real-time C++ · Audio Pipelines · Embedded Systems · Bangalore, India
+      </p>
+      <div class="hero-actions reveal-up">
+        <a href="#projects" class="btn-primary" id="hero-view-work">View My Work</a>
+        <a href="#contact"  class="btn-ghost"   id="hero-contact">Get In Touch</a>
+      </div>
+      <div class="hero-socials reveal-up">
+        <a href="mailto:soorajmd2544@gmail.com" class="social-link" id="hero-email" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/sooraj-m-d-1a2003200" target="_blank" class="social-link" id="hero-linkedin" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="tel:+917034502544" class="social-link" id="hero-phone" aria-label="Phone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.09 12 19.79 19.79 0 01.22 3.38 2 2 0 012.2 1.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.35a16 16 0 006.56 6.56l1.56-1.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─────────────────────────────────────── -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label reveal-up">About Me</div>
+      <h2 class="section-title reveal-up">Crafting Sound at<br/><span class="gradient-text">Silicon Speed</span></h2>
+      <div class="about-grid">
+        <div class="about-visual reveal-left">
+          <div class="about-card-glow"></div>
+          <div class="about-avatar">
+            <div class="avatar-ring"></div>
+            <div class="avatar-inner">
+              <span class="avatar-initials">SM</span>
+            </div>
+            <div class="avatar-badge">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+              DSP Expert
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-value" data-count="1">0</span><span class="stat-unit">yr+</span>
+              <span class="stat-label">Industry Exp.</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-value" data-count="50">0</span><span class="stat-unit">%</span>
+              <span class="stat-label">CPU Reduction</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-value" data-count="3">0</span><span class="stat-unit">+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal-right">
+          <p class="about-para">
+            I'm an <strong>Automotive Audio DSP Software Engineer</strong> currently working at 
+            <strong>Harman International (Samsung)</strong> in Bangalore, where I specialize in 
+            building high-performance, real-time C++ audio pipeline components for automotive 
+            infotainment systems.
+          </p>
+          <p class="about-para">
+            My work spans <strong>SIMD-based performance optimization</strong> using Intel SSE 
+            intrinsics, low-level debugging on <strong>Analog Devices SHARC DSP processors</strong>, 
+            and maintaining production codebases under strict MISRA C++ standards. I achieved a 
+            <strong>50% reduction in CPU utilization</strong> through targeted SIMD optimizations 
+            in real-time audio pipelines.
+          </p>
+          <p class="about-para">
+            I'm actively seeking roles as an <strong>Audio DSP / Embedded C++ Engineer</strong> 
+            in automotive or audio technology domains — available to join immediately.
+          </p>
+          <div class="about-tags">
+            <span class="tag">Real-Time Systems</span>
+            <span class="tag">Audio DSP</span>
+            <span class="tag">C++ Optimization</span>
+            <span class="tag">SIMD / SSE</span>
+            <span class="tag">Automotive Grade</span>
+            <span class="tag">Immediate Joiner</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EXPERIENCE ────────────────────────────────── -->
+  <section id="experience" class="section section-dark">
+    <div class="container">
+      <div class="section-label reveal-up">Experience</div>
+      <h2 class="section-title reveal-up">Where I've <span class="gradient-text">Worked</span></h2>
+      <div class="timeline">
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-role">Automotive Embedded C++ Engineer – Audio DSP Systems</h3>
+                <div class="tl-company">
+                  <span class="tl-company-name">Harman International</span>
+                  <span class="tl-company-badge">Samsung</span>
+                </div>
+                <div class="tl-meta">
+                  <span class="tl-location">📍 Bangalore, India</span>
+                  <span class="tl-date">May 2025 – Present</span>
+                </div>
+              </div>
+              <div class="tl-logo">
+                <svg viewBox="0 0 60 60" fill="none">
+                  <circle cx="30" cy="30" r="28" stroke="url(#grad1)" stroke-width="2"/>
+                  <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" fill="url(#grad1)" font-size="10" font-family="Inter" font-weight="700">DSP</text>
+                  <defs>
+                    <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stop-color="#00d4ff"/>
+                      <stop offset="100%" stop-color="#7b61ff"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <ul class="tl-bullets">
+              <li>Designed, optimized, and validated DSP components within a large-scale automotive infotainment production codebase.</li>
+              <li>Debugged real-time functional issues using <strong>Visual Studio 2022</strong> and <strong>VS Code</strong>, ensuring stability in performance-constrained automotive systems.</li>
+              <li>Implemented <strong>SIMD-based optimization</strong> using Intel SSE intrinsics, achieving up to <strong class="highlight-stat">50% reduction</strong> in CPU utilization in real-time audio pipelines.</li>
+              <li>Performed low-level debugging, flashing, and validation on <strong>Analog Devices SHARC DSP processors</strong> in hardware test environments.</li>
+              <li>Identified and resolved compiler warnings, bug fixes, static analysis findings, and code-quality issues across multiple C++ modules.</li>
+              <li>Developed and executed unit tests for DSP modules to validate functionality and system integration.</li>
+              <li>Worked within automotive development workflows using <strong>Harman Global Tuning Tool (GTT)</strong> for audio validation and system behaviour analysis.</li>
+            </ul>
+            <div class="tl-chips">
+              <span class="chip">C++</span>
+              <span class="chip">SIMD/SSE</span>
+              <span class="chip">SHARC DSP</span>
+              <span class="chip">MISRA C++</span>
+              <span class="chip">Real-time Audio</span>
+              <span class="chip">GTT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ────────────────────────────────────── -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-label reveal-up">Technical Skills</div>
+      <h2 class="section-title reveal-up">My <span class="gradient-text">Toolkit</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-category reveal-up" id="sk-lang">
+          <div class="skill-cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+            </svg>
+          </div>
+          <h3 class="skill-cat-title">Languages</h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>C / C++ (OOP, STL)</span><span class="skill-pct">95%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Embedded C</span><span class="skill-pct">90%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Python (Basic)</span><span class="skill-pct">60%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="60"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal-up" id="sk-embedded">
+          <div class="skill-cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/>
+            </svg>
+          </div>
+          <h3 class="skill-cat-title">Embedded & Systems</h3>
+          <div class="skill-tags">
+            <span class="stag">ARM (LPC2129)</span>
+            <span class="stag">Memory Management</span>
+            <span class="stag">Low-level Debugging</span>
+            <span class="stag">IPC Basics</span>
+            <span class="stag">System Calls</span>
+            <span class="stag">SHARC DSP</span>
+            <span class="stag">SIMD / SSE</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal-up" id="sk-auto">
+          <div class="skill-cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>
+            </svg>
+          </div>
+          <h3 class="skill-cat-title">Automotive & Protocols</h3>
+          <div class="skill-tags">
+            <span class="stag">MISRA C++</span>
+            <span class="stag">CAN Bus</span>
+            <span class="stag">UART</span>
+            <span class="stag">SPI</span>
+            <span class="stag">I2C</span>
+            <span class="stag">TCP/IP</span>
+            <span class="stag">CAPL Scripting</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal-up" id="sk-tools">
+          <div class="skill-cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
+            </svg>
+          </div>
+          <h3 class="skill-cat-title">Tools & IDEs</h3>
+          <div class="skill-tags">
+            <span class="stag">Visual Studio 2022</span>
+            <span class="stag">VS Code</span>
+            <span class="stag">Git Bash</span>
+            <span class="stag">Vector CANoe</span>
+            <span class="stag">Keil μVision</span>
+            <span class="stag">Proteus</span>
+            <span class="stag">Beyond Compare</span>
+            <span class="stag">Harman GTT</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ──────────────────────────────────── -->
+  <section id="projects" class="section section-dark">
+    <div class="container">
+      <div class="section-label reveal-up">Projects</div>
+      <h2 class="section-title reveal-up">Things I've <span class="gradient-text">Built</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal-up featured" id="proj-audio-engine">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
+              </svg>
+            </div>
+            <span class="project-status in-progress">In Progress</span>
+          </div>
+          <h3 class="project-title">Real-Time Audio Processing Engine</h3>
+          <p class="project-desc">
+            A multi-threaded real-time audio engine in C++ using <strong>PortAudio</strong>, implementing 
+            low-latency audio streaming, modular DSP effects (gain, filtering), and ring buffer-based 
+            architecture for real-time performance.
+          </p>
+          <div class="project-chips">
+            <span class="chip">C++</span>
+            <span class="chip">PortAudio</span>
+            <span class="chip">Multi-threading</span>
+            <span class="chip">DSP</span>
+            <span class="chip">Ring Buffer</span>
+          </div>
+          <div class="project-wave">
+            <canvas class="wave-canvas" id="wave-canvas-1" width="400" height="60"></canvas>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" id="proj-gear-shift">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+              </svg>
+            </div>
+            <span class="project-status completed">Completed</span>
+          </div>
+          <h3 class="project-title">Virtual Gear Shift Assistance</h3>
+          <p class="project-desc">
+            Developed a <strong>CAN-based virtual gear shift advisory system</strong> using CAPL scripting 
+            in CANoe. Simulated vehicle speed signals and validated gear recommendations through 
+            real-time CAN bus communication.
+          </p>
+          <div class="project-chips">
+            <span class="chip">CAPL</span>
+            <span class="chip">Vector CANoe</span>
+            <span class="chip">CAN Bus</span>
+            <span class="chip">Automotive</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" id="proj-bluetooth">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polyline points="6.5 6.5 17.5 17.5 12 23 12 1 17.5 6.5 6.5 17.5"/>
+              </svg>
+            </div>
+            <span class="project-status completed">Completed</span>
+          </div>
+          <h3 class="project-title">Bluetooth Temperature Monitoring</h3>
+          <p class="project-desc">
+            Designed an <strong>embedded system</strong> to measure temperature and transmit data via 
+            UART and Bluetooth to a mobile device. Implemented on ARM-based microcontroller with 
+            real-time data streaming.
+          </p>
+          <div class="project-chips">
+            <span class="chip">Embedded C</span>
+            <span class="chip">ARM</span>
+            <span class="chip">UART</span>
+            <span class="chip">Bluetooth</span>
+            <span class="chip">Keil μVision</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EDUCATION ─────────────────────────────────── -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-label reveal-up">Education</div>
+      <h2 class="section-title reveal-up">Academic <span class="gradient-text">Background</span></h2>
+      <div class="education-card reveal-up" id="edu-gec">
+        <div class="edu-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
+          </svg>
+        </div>
+        <div class="edu-body">
+          <h3 class="edu-degree">B.Tech – Electrical & Electronics Engineering</h3>
+          <div class="edu-school">Government Engineering College, Wayanad</div>
+          <div class="edu-year">
+            <span class="edu-badge">2023</span>
+            <span class="edu-loc">📍 Wayanad, Kerala</span>
+          </div>
+        </div>
+        <div class="edu-visual">
+          <div class="edu-circuit">
+            <svg viewBox="0 0 120 80" fill="none" stroke="rgba(0,212,255,0.3)" stroke-width="1">
+              <circle cx="60" cy="40" r="15" stroke="rgba(0,212,255,0.5)"/>
+              <line x1="0" y1="40" x2="45" y2="40"/>
+              <line x1="75" y1="40" x2="120" y2="40"/>
+              <line x1="60" y1="0" x2="60" y2="25"/>
+              <line x1="60" y1="55" x2="60" y2="80"/>
+              <circle cx="10" cy="40" r="3" fill="rgba(0,212,255,0.4)"/>
+              <circle cx="110" cy="40" r="3" fill="rgba(0,212,255,0.4)"/>
+              <circle cx="60" cy="10" r="3" fill="rgba(0,212,255,0.4)"/>
+              <circle cx="60" cy="70" r="3" fill="rgba(0,212,255,0.4)"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ───────────────────────────────────── -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <div class="section-label reveal-up">Contact</div>
+      <h2 class="section-title reveal-up">Let's <span class="gradient-text">Connect</span></h2>
+      <p class="contact-sub reveal-up">
+        I'm actively looking for <strong>Audio DSP / Embedded C++ Engineer</strong> roles.<br/>
+        Immediate joiner — let's build something extraordinary together.
+      </p>
+      <div class="contact-grid">
+        <a href="mailto:soorajmd2544@gmail.com" class="contact-card reveal-up" id="cnt-email">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">soorajmd2544@gmail.com</span>
+          </div>
+        </a>
+        <a href="tel:+917034502544" class="contact-card reveal-up" id="cnt-phone">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.09 12 19.79 19.79 0 01.22 3.38 2 2 0 012.2 1.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.35a16 16 0 006.56 6.56l1.56-1.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">(+91) 7034502544</span>
+          </div>
+        </a>
+        <a href="https://linkedin.com/in/sooraj-m-d-1a2003200" target="_blank" class="contact-card reveal-up" id="cnt-linkedin">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">sooraj-m-d-1a2003200</span>
+          </div>
+        </a>
+        <div class="contact-card reveal-up" id="cnt-location">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Bangalore, India</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────────── -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">SM<span class="accent">.</span></span>
+      <p class="footer-copy">
+        Designed & built by <strong>Sooraj MD</strong> · 2025
+      </p>
+      <p class="footer-made">Made with ♥ for the world of Audio DSP</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
